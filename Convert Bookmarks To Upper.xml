@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Commands>
+	<Command name="JavaScript" pauseBefore="false" promptUser="false" label="Convert Bookmarks To Upper" tooltip="Convert Bookmarks To Upper" ID="a5f0cef0bf2f41e1b1b456af6f9b10b">
+		<Items>
+			<Item name="ScriptCode" type="text" value="// Recursive function to convert bookmark titles to uppercase&#xD;&#xA;function convertBookmarksToUpper(bm) {&#xD;&#xA;    if (!bm) return;&#xD;&#xA;    bm.name = bm.name.toUpperCase();&#xD;&#xA;    if (bm.children &amp;&amp; bm.children.length &gt; 0) {&#xD;&#xA;        for (var i = 0; i &lt; bm.children.length; i++) {&#xD;&#xA;            convertBookmarksToUpper(bm.children[i]);&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// Start from the root bookmark&#xD;&#xA;var root = this.bookmarkRoot;&#xD;&#xA;if (root &amp;&amp; root.children &amp;&amp; root.children.length &gt; 0) {&#xD;&#xA;    for (var i = 0; i &lt; root.children.length; i++) {&#xD;&#xA;        convertBookmarksToUpper(root.children[i]);&#xD;&#xA;    }&#xD;&#xA;    app.alert(&quot;All bookmark titles have been converted to CAPITAL LETTERS.&quot;);&#xD;&#xA;} else {&#xD;&#xA;    app.alert(&quot;No bookmarks found in this document.&quot;);&#xD;&#xA;}"/>
+		</Items>
+	</Command>
+</Commands>
