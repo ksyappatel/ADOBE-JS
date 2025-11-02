@@ -1,2 +1,2 @@
-# Hello
-##HI Form KP
+# Hello Friend
+In This All about JAVA Language
